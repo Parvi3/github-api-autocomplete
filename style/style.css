@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "TT Lakes Medium";
+    src: url(TTLakes-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgba(196, 196, 196, 1);
+    box-sizing: border-box;
+    font-family: "TT Lakes Medium", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    background-color: transparent;
+    color: inherit;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    transform: translateY(60px);
+}
+
+.input {
+    width: 500px;
+    height: 61px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 3px;
+}
+
+.list__item {
+    width: 500px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    background-color: rgba(227, 227, 227, 1);
+}
+
+.list__item:hover {
+    background-color: rgba(101, 205, 249, 1);
+}
+
+.item__repo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 500px;
+    height: 101px;
+    background: rgba(226, 123, 235, 1);
+}
+
+.item__repo div,
+.item__repo button {
+    background: inherit;
+}
+
+.btn {
+    width: 42px;
+    height: 42px;
+    color: rgba(255, 0, 0, 1);
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
